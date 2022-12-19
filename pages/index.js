@@ -1,7 +1,17 @@
 import Head from 'next/head'
+import Form from "../public/src/components/form"
+import { Autocomplete, TextField } from "@mui/material"
+import { useRef } from "react"
+import Result from "../public/src/components/result"
 
 export default function Home() {
-
+const footprint = useRef(null)
+const scrollDown = () => {
+  window.scrollTo({
+    top: footprint.current.offsetTop,
+    behavior: 'smooth',
+  });
+};
 
   return (
    
@@ -21,7 +31,7 @@ export default function Home() {
       <h1 class="text-3xl font-extrabold sm:text-5xl">
         Let us find your
 
-        <strong class="block font-extrabold text-rose-700">
+        <strong class="block font-extrabold text-green-700">
           Forever Home.
         </strong>
       </h1>
@@ -33,21 +43,26 @@ export default function Home() {
 
       <div class="mt-8 flex flex-wrap gap-4 text-center">
         <a
-          href="#"
-          class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+          onClick={scrollDown}
+          class="block w-full rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
         >
-          Get Started
+          Check it now!
         </a>
 
         <a
           href="#"
-          class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+          class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-green-600 shadow hover:text-green-700 focus:outline-none focus:ring active:text-green-500 sm:w-auto"
         >
           Learn More
         </a>
       </div>
     </div>
   </div>
+</section>
+<section className="p-3" ref ={footprint}>
+  <h1 className="text-black text-2xl font-bold text-center my-10">Let's start</h1>
+  <Form />
+  <Result />
 </section>
 
     </div>

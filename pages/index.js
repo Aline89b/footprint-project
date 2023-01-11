@@ -5,14 +5,6 @@ import Link from 'next/link'
 
 export default function Home() {
   
-/*const footprint = useRef(null)
-const scrollDown = () => {
-  window.scrollTo({
-    top: footprint.current.offsetTop,
-    behavior: 'smooth',
-  });
-};*/
-
 
   return (
    
@@ -30,19 +22,18 @@ const scrollDown = () => {
   >
     <div className="max-w-xl text-center sm:text-left">
       <h1 className="text-3xl font-extrabold sm:text-5xl">
-        Let us find your
+      Planning your next <strong className="block font-extrabold text-green-700">travel</strong> and you want to know
 
         <strong className="block font-extrabold text-green-700">
-          Forever Home.
+        your impact on the world?
         </strong>
       </h1>
 
       <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-        tenetur fuga ducimus numquam ea!
+        Click the green button down here to discover the flight footprint of your travel or Learn more to get some info directly to you e mail adress.
       </p>
 
-      <div className="mt-8 flex flex-wrap gap-4 text-center">
+      <div className="mt-8 sm:flex flex-wrap gap-4 text-center">
         <Link href="/form"><div
           
           className="block w-full rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
@@ -52,7 +43,7 @@ const scrollDown = () => {
         </Link>
         <Link
           href="/jsForm"
-          className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-green-600 shadow hover:text-green-700 focus:outline-none focus:ring active:text-green-500 sm:w-auto"
+          className="block w-full rounded bg-white px-12 py-3 text-sm mt-6 sm:mt-0 font-medium text-green-600 shadow hover:text-green-700 focus:outline-none focus:ring active:text-green-500 sm:w-auto "
         >
           Learn More
         </Link>

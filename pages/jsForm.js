@@ -41,7 +41,7 @@ export default function JsForm() {
       console.log(typeof(result.data))
     }
     return (
-      // We pass the event to the handleSubmit() function on submit.
+      
       
         <div className='flex justify-center'>
             <div className='flex-col  mt-20 p-2 font-bold text-center text-xl '>
@@ -64,6 +64,7 @@ export default function JsForm() {
                         spacing={2}
                         alignItems="center"
                         mt={10}
+                        
                         sx={{borderRadius: 1, boxShadow: 2,p: 4, mx:"auto", width: 300, height: 400}}
                         >
                           

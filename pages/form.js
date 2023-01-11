@@ -7,7 +7,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import data from "/public/json/data.json"
 import Result from "../public/src/components/result"
 import Header from "../public/src/components/header"
-
+import Link from "next/link"
 
 
 export default function Form() {
@@ -57,7 +57,9 @@ export default function Form() {
       <Header />
      </div>
     <div className="flex flex-wrap justify-center mt-24">
-     <Stack direction="row" spacing={2}>
+     <Stack 
+     direction={{ xs: 'column', sm: 'column', md:"row"}} 
+     spacing={2}>
     
       <Autocomplete
         disablePortal
@@ -69,7 +71,7 @@ export default function Form() {
           console.log(neworiginVal.code)
           setOriginVal(neworiginVal.code)
         } }
-        sx={{ width: 400 }}
+        sx={{ minWidth: 250 }}
         getOptionLabel={(option) => `${option.name} ${option.country}`}
         renderOption={(props, option) => (
         <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
@@ -86,7 +88,7 @@ export default function Form() {
         disablePortal
         id="destination"
         options={data}
-        sx={{ width: 350 }}
+        sx={{ minWidth: 250 }}
         getOptionLabel={(option) => `${option.name} ${option.country}`}
         onChange={(e, newDestinationVal) => setDestinationVal(newDestinationVal.code)}
         renderOption={(props, option) => (
@@ -117,8 +119,13 @@ export default function Form() {
            <Button onClick={fetchData} variant="outlined"> GO!</Button>
           </Stack>
            </div>
-          <div>
+          <div className=" p-6 mt-5">
             <Result result={result} value = {value} />
+          </div>
+          <div className="flex justify-center mt-8">
+            <Link href="/jsForm" className="block w-auto text-center rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500">
+              Learn more
+            </Link>
           </div>
         </div>  
       )

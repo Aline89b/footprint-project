@@ -1,7 +1,7 @@
 import { mongoose } from "mongoose"
 
 
-// const DB_URL = "mongodb+srv://AGproject:Ayx9DdFPyMK459wf@cluster0.xgfg89j.mongodb.net/MAILDB?retryWrites=true&w=majority"
+
 
 
 const connectMongo = async () => {

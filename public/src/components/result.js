@@ -1,15 +1,20 @@
 import React from "react"
+import{ motion } from "framer-motion"
 
 export default function Result(props) {
      
     return (
-
-        <div className="  flex-col text-center text-lg text-red-700 p-6">
-            <h1 className="text-black text-2xl font-bold text-center my-10">Let's start</h1>
-              <h1>Once you put the airport of your departure and your arrival you will get the footprint of your travel</h1>
+    <motion.div className=" flex-col text-center text-lg p-6  "
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }} >
+            
           <p>Results are in kg</p>
-          <h1 className="text-black text-2xl font-bold ">CO2 EMISSION FOR PASSENGER: {props.result} </h1>
-          <h1 className="text-black text-2xl font-bold"> TOTAL CO2 EMISSION:  {props.result/1*props.value }  </h1>
-        </div>
+          <h1 className="text-black text-2xl font-bold ">CO2 EMISSION FOR PASSENGER:  </h1>
+            <h2 className=" text-green-700"> {props.result} </h2>
+          <h1 className="text-black text-2xl font-bold"> TOTAL CO2 EMISSION: </h1>
+            <h2 className=" text-green-700"> {props.result/1*props.value }  </h2>
+        </motion.div>
+    
     )
 }

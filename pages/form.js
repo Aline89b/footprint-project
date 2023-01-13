@@ -119,11 +119,15 @@ export default function Form() {
            <Button onClick={fetchData} variant="outlined"> GO!</Button>
           </Stack>
            </div>
-          <div className=" p-6 mt-5">
-            <Result result={result} value = {value} />
-          </div>
+          
+            {result &&
+          <div className="flex justify-center p-6 mt-5 mr-auto ml-auto max-w-sm rounded overflow-hidden bg-amber-100">
+              <Result result={result} value = {value} />
+          </div> 
+          }
+          
           <div className="flex justify-center mt-8">
-            <Link href="/jsForm" className="block w-auto text-center rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500">
+            <Link href="/jsForm" className="block w-auto mb-3 text-center rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500">
               Learn more
             </Link>
           </div>

@@ -5,8 +5,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import data from "/public/json/data.json"
-import Result from "../public/src/components/result"
-import Header from "../public/src/components/header"
+import Result from "../components/result"
+import Header from "../components/header"
 import Link from "next/link"
 
 

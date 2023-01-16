@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import UserContact from "../../model/userContact"
-import connectMongo from "../lib/mongo/index"
+import connectMongo from "../../lib/mongo/index"
 
 export default  function handler(req, res) {
    connectMongo()

@@ -7,6 +7,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import data from "/public/json/data.json"
 import Result from "../components/result"
 import Header from "../components/header"
+
 import Link from "next/link"
 
 

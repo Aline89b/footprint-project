@@ -8,8 +8,6 @@ import InputLabel from '@mui/material/InputLabel';
 import { setRevalidateHeaders } from 'next/dist/server/send-payload';
 
 
-
-
 export default function JsForm() {
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');

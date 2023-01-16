@@ -1,5 +1,6 @@
 import { Schema, models, model} from "mongoose"
 
+
 const userContactSchema = new Schema({
     name: String,
     surname: String,

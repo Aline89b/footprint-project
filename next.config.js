@@ -7,7 +7,7 @@ const nextConfig = {
     API_KEY: process.env.API_KEY,
   },
   images: {
-    domains: ["images.unsplash.com"]
+    domains: ["localhost/3000"]
   }  
   
 }

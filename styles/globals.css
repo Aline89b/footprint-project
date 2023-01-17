@@ -29,3 +29,6 @@ a {
     background: black;
   }
 }
+.homepage{
+  overflow: hidden;
+}

@@ -41,7 +41,7 @@ export default function JsForm() {
     return (
       
       
-        <div className='flex justify-center'>
+        <div className='flex flex-wrap justify-center'>
             <div className='flex-col  mt-20 p-2 font-bold text-center text-xl '>
                 <h1>Wanna know what you can do to
                 <br></br> 

@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
    
-    <div className='scrollbar-hide h-screen'>
+    <div className=' h-full'>
           
               <section
           className="relative bg-[url(../public/images/bg.img.jpg)] bg-cover bg-center bg-no-repeat"
@@ -18,7 +18,7 @@ export default function Home() {
           ></div>
 
           <div
-            className="relative mx-auto my-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center justify-center lg:px-8"
+            className="relative mx-auto my-auto max-w-screen-xl px-4 pt-32 pb-[7.2rem] sm:px-6 lg:flex lg:h-screen lg:items-center justify-center lg:px-8"
           >
             <div className="max-w-xl text-center sm:text-left">
               <h1 className="text-3xl font-extrabold sm:text-5xl">
@@ -50,12 +50,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-        <section className="p-3">
-          
-          
-          
-        </section>
+         </section>
+      
 
    </div>
   )

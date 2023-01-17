@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
    
-    <div className='scrollbar-hide'>
+    <div className='scrollbar-hide h-screen'>
           
               <section
           className="relative bg-[url(../public/images/bg.img.jpg)] bg-cover bg-center bg-no-repeat"

@@ -59,6 +59,7 @@ export default function Form() {
      </div>
     <div className="flex flex-wrap justify-center mt-24">
      <Stack 
+     
      direction={{ xs: 'column', sm: 'column', md:"row"}} 
      spacing={2}>
     
@@ -80,7 +81,7 @@ export default function Form() {
           {option.country} ({option.city}) {option.name}
         </Box>
       )}
-        renderInput={(params) => <TextField {...params} label="From" inputProps={{
+        renderInput={(params) => <TextField {...params} sx={{ bgcolor: "ghostwhite"}} label="From" inputProps={{
           ...params.inputProps,}}
           />}
          />
@@ -98,11 +99,12 @@ export default function Form() {
           {option.name} ({option.city}) {option.country}
         </Box>
       )}
-        renderInput={(params) => <TextField {...params} label="To" />}
+        renderInput={(params) => <TextField {...params} sx={{ bgcolor: "ghostwhite"}} label="To" />}
       />
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">passengers</InputLabel>
             <Select
+              sx={{ bgcolor: "ghostwhite"}}
               labelId="demo-simple-select-label"
               id="demo-simple-select"
               value={value}

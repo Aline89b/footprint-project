@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
    
-    <div className=' h-full'>
+    <div className=' h-full dark:text-black'>
           
               <section
           className="relative bg-[url(../public/images/bg.img.jpg)] bg-cover bg-center bg-no-repeat"

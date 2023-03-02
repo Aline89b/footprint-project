@@ -3,12 +3,14 @@ import {TextField, Autocomplete, Stack, Box, Button}  from "@mui/material"
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import data from "/public/json/data.json"
 import Result from "../components/result"
 import Header from "../components/header"
-
 import Link from "next/link"
+import { v4 as uuid } from 'uuid'
+import Navbar from "../components/navbar"
+
 
 
 export default function Form() {
@@ -16,8 +18,15 @@ export default function Form() {
   const [originVal, setOriginVal] = useState("" || null);
   const [destinationVal, setDestinationVal] = useState(''|| null)
   const [result, setResult] = useState();
+  
   console.log(originVal)
+  
+  data.forEach(element => {
+    element.id= uuid()
+    
+  });
  
+    
   
   const fetchData = async () => {
     
@@ -54,6 +63,7 @@ export default function Form() {
     return (
     
   <div>
+    <Navbar />
     <div className="relative w-full h-96 overflow-hidden">
       <Header />
      </div>
@@ -74,12 +84,13 @@ export default function Form() {
           setOriginVal(neworiginVal.code)
         } }
         sx={{ minWidth: 250 }}
-        getOptionLabel={(option) => `${option.name} ${option.country}`}
+        getOptionLabel={(option) => `${option.city} `}
         renderOption={(props, option) => (
-        <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
-        
-          {option.country} ({option.city}) {option.name}
-        </Box>
+          <Box component="li" 
+           sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props} key= {option.id}>
+          
+            {option.city} ({option.name}) {option.country}
+          </Box>
       )}
         renderInput={(params) => <TextField {...params} sx={{ bgcolor: "ghostwhite"}} label="From" inputProps={{
           ...params.inputProps,}}
@@ -91,15 +102,17 @@ export default function Form() {
         id="destination"
         options={data}
         sx={{ minWidth: 250 }}
-        getOptionLabel={(option) => `${option.name} ${option.country}`}
+        getOptionLabel={(option) => `${option.city} `}
         onChange={(e, newDestinationVal) => setDestinationVal(newDestinationVal.code)}
         renderOption={(props, option) => (
-        <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
+           
+        <Box component="li"  sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props} key={option.id}>
         
-          {option.name} ({option.city}) {option.country}
+          {option.city} ({option.name}) {option.country}
         </Box>
       )}
-        renderInput={(params) => <TextField {...params} sx={{ bgcolor: "ghostwhite"}} label="To" />}
+        renderInput={(params) => <TextField {...params} sx={{ bgcolor: "ghostwhite"}} label="To" inputProps={{
+          ...params.inputProps,}} />}
       />
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">passengers</InputLabel>

@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
-import { setRevalidateHeaders } from 'next/dist/server/send-payload';
+import Navbar from "../components/navbar"
 
 
 export default function JsForm() {
@@ -42,6 +42,7 @@ export default function JsForm() {
       
       
         <div className='flex flex-wrap justify-center'>
+            <Navbar />
             <div className='flex-col  mt-20 p-2 font-bold text-center text-xl '>
                 <h1>Wanna know what you can do to
                 <br></br> 

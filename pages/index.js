@@ -1,4 +1,4 @@
-
+import Navbar from "../components/navbar"
 import Link from 'next/link'
 
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
    
     <div className=' h-full dark:text-black'>
-          
+        <Navbar />
               <section
           className="relative bg-[url(../public/images/bg.img.jpg)] bg-cover bg-center bg-no-repeat"
         >

@@ -10,56 +10,18 @@ import Header from "../components/header"
 import Link from "next/link"
 import { v4 as uuid } from 'uuid'
 import Navbar from "../components/navbar"
+import useFlightData from '../hooks/useFlightData';
 
 
 
 export default function Form() {
-  const [value, setValue] = useState(1);
-  const [originVal, setOriginVal] = useState("" || null);
-  const [destinationVal, setDestinationVal] = useState(''|| null)
-  const [result, setResult] = useState();
-  
-  console.log(originVal)
-  
+  const { value, originVal, destinationVal, result, handleChange, handleOriginChange, handleDestinationChange, fetchData } = useFlightData();
+
   data.forEach(element => {
     element.id= uuid()
     
   });
- 
-    
-  
-  const fetchData = async () => {
-    
-    const res = await fetch("https://beta3.api.climatiq.io/travel/flights", {
-      method: "POST",
-      body: JSON.stringify(
-      {
-        "legs": [
-        { 
-        "from": originVal,
-        "to": destinationVal,
-        "passengers": value,
-      }
-    ]
-      }) ,
-      headers: {
-        "Content-Type":"application/json",
-        "Authorization": ` Bearer ${process.env.API_KEY} `,
-      },
-    })
-     const data = await res.json()
-     console.log(data)
-    console.log(data.co2e/value)
-    console.log(data.co2e, data.co2e_unit)
-    setResult(data.co2e)
-    
-    
-  }
-  
-  const handleChange = (event) => {
-    
-    setValue(event.target.value);
-  };
+
     return (
     
   <div>
@@ -79,10 +41,7 @@ export default function Form() {
         id="origin"
         options={data}
         
-        onChange={(e, neworiginVal) =>{
-          console.log(neworiginVal.code)
-          setOriginVal(neworiginVal.code)
-        } }
+        onChange={handleOriginChange}
         sx={{ minWidth: 250 }}
         getOptionLabel={(option) => `${option.city} `}
         renderOption={(props, option) => (
@@ -103,7 +62,7 @@ export default function Form() {
         options={data}
         sx={{ minWidth: 250 }}
         getOptionLabel={(option) => `${option.city} `}
-        onChange={(e, newDestinationVal) => setDestinationVal(newDestinationVal.code)}
+        onChange={handleDestinationChange}
         renderOption={(props, option) => (
            
         <Box component="li"  sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props} key={option.id}>

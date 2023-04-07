@@ -3,12 +3,10 @@ import { SocialIcon } from 'react-social-icons';
 import Image from 'next/image';
 
 export default function  Navbar(){
-  // This styling will be applied to a <NavLink> when the
-  // route that it links to is currently selected.
   
 
   return (
-    <nav className=' flex justify-between bg-[#E4D4DA]'>
+    <nav className='w-full flex justify-between bg-[#E4D4DA]'>
       <ul className='flex text-lg font-bold mx-1 items-center justify-center space-x-4'>
         <li>
           <Link 

@@ -1,12 +1,11 @@
-import { Schema, models, model} from "mongoose"
-
+import { Schema, models, model } from "mongoose";
 
 const userContactSchema = new Schema({
-    name: String,
-    surname: String,
-    email: String
-})
+  name: String,
+  surname: String,
+  email: String,
+});
 
- const UserContact = models.contact || model("contact", userContactSchema)
+const UserContact = models.contact || model("contact", userContactSchema);
 
-export default UserContact
+export default UserContact;

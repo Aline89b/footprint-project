@@ -4,22 +4,22 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex justify-between bg-[#E4D4DA]">
+    <nav className="w-full flex justify-between shadow-md shadow-orange-300">
       <ul className="flex text-lg font-bold mx-1 items-center justify-center space-x-4">
         <li>
           <Link href="/">
             <Image
               src="/images/logo.svg"
-              height={38}
-              width={38}
+              height={40}
+              width={40}
               alt="check your flight footprint"
             />
           </Link>
         </li>
-        <li className="hover:text-pink-500">
+        <li className="hover:text-orange-500">
           <Link href="/form">Calculate footprint</Link>
         </li>
-        <li className="hover:text-pink-500">
+        <li className="hover:text-orange-500">
           <Link href="/jsForm">Keep in touch!</Link>
         </li>
       </ul>

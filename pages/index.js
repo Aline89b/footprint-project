@@ -1,20 +1,21 @@
 import Navbar from "../components/navbar";
 import Link from "next/link";
 
+
 export default function Home() {
   return (
     <div className=" h-full dark:text-black">
-      <Navbar />
-      <section className="relative bg-[url(../public/images/bg.img.jpg)] bg-cover bg-center bg-no-repeat">
-        <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
-
+     <section className=" w-full absolute bg-[url(../public/images/bgWorld.svg)]  bg-cover bg-center bg-no-repeat">
+    
+        <Navbar />
+        
         <div className="relative mx-auto my-auto max-w-screen-xl px-4 pt-32 pb-[7.2rem] sm:px-6 lg:flex lg:h-screen lg:items-center justify-center lg:px-8">
           <div className="max-w-xl text-center sm:text-left">
             <h1 className="text-3xl font-extrabold sm:text-5xl">
-              Planning your next{" "}
+              Planning your next
               <strong className="block font-extrabold text-green-700">
                 travel
-              </strong>{" "}
+              </strong>
               and you want to know
               <strong className="block font-extrabold text-green-700">
                 your impact on the world?
@@ -29,15 +30,15 @@ export default function Home() {
 
             <div className="mt-8 sm:flex flex-wrap gap-4 text-center">
               <Link href="/form">
-                <div className="block w-full rounded bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500 sm:w-auto">
+                <div className="animate-bounce block w-full rounded-lg bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500 sm:w-auto">
                   Check it now!
                 </div>
               </Link>
               <Link
                 href="/jsForm"
-                className="block w-full rounded bg-white px-12 py-3 text-sm mt-6 sm:mt-0 font-medium text-green-600 shadow hover:text-green-700 focus:outline-none focus:ring active:text-green-500 sm:w-auto "
+                className=" block w-full rounded-lg bg-white border-2 border-green-600 px-12 py-3 text-sm mt-6 sm:mt-0 font-medium text-green-600 shadow hover:text-green-700 focus:outline-none focus:ring active:text-green-500 sm:w-auto "
               >
-                Learn More
+                Tell me more
               </Link>
             </div>
           </div>

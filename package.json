@@ -25,6 +25,7 @@
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
+    "@svgr/webpack": "^7.0.0",
     "autoprefixer": "^10.4.13",
     "mongoose": "^6.8.3",
     "postcss": "^8.4.19",

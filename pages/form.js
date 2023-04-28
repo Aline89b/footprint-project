@@ -34,7 +34,7 @@ export default function Form() {
       <div className="relative w-full h-96 overflow-hidden">
         <Header />
       </div>
-      <div className="flex flex-wrap justify-center mt-24">
+      <div className="flex flex-wrap justify-center mt-12">
         <Stack
           direction={{ xs: "column", sm: "column", md: "row" }}
           spacing={2}
@@ -115,7 +115,7 @@ export default function Form() {
             </Select>
           </FormControl>
           <Button onClick={fetchData} variant="outlined">
-            {" "}
+          
             GO!
           </Button>
         </Stack>

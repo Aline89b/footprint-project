@@ -45,7 +45,7 @@ export default function Form() {
             options={data}
             onChange={handleOriginChange}
             sx={{ minWidth: 250 }}
-            getOptionLabel={(option) => `${option.city} `}
+            getOptionLabel={(option) => `${option.city}${option.name}${option.country} `}
             renderOption={(props, option) => (
               <Box
                 component="li"

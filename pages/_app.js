@@ -5,10 +5,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>My Next App</title>
+        <title>Footprint calculator</title>
         <meta
-          name="description"
-          content="This is a desription for My Next App"
+          name="Footprint calculator for your travel emissions"
+          content="Calculate your travel emissions with our footprint calculator. Enter your origin, destination, and travel mode to get accurate CO2 emissions data."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex justify-between shadow-md shadow-orange-300">
+    <nav className="w-full flex justify-between shadow-md shadow-orange-300 bg-[#b2845b]">
       <ul className="flex text-lg font-bold mx-1 items-center justify-center space-x-4">
         <li>
           <Link href="/">
@@ -16,10 +16,10 @@ export default function Navbar() {
             />
           </Link>
         </li>
-        <li className="hover:text-orange-500">
+        <li className="hover:text-[#2e7f37]">
           <Link href="/form">Calculate footprint</Link>
         </li>
-        <li className="hover:text-orange-500">
+        <li className="hover:text-[#2e7f37]">
           <Link href="/jsForm">Keep in touch!</Link>
         </li>
       </ul>

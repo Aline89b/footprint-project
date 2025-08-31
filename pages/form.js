@@ -52,18 +52,18 @@ export default function Form() {
 
   return (
     
-    <div className=" bg-black overflow-hidden min-h-screen">
+    <div className="overflow-hidden min-h-screen">
       <Navbar />
       
-     <div className="flex flex-col flex-wrap justify-center h-screen  mt-8 relative bg-[url(../public/images/bgWorld.svg)] opacity-75 bg-cover bg-center bg-no-repeat">
+     <div className="flex flex-col flex-wrap justify-center h-screen  mt-8 relative bg-[url(../public/images/bgWorld.svg)] bg-cover bg-center bg-no-repeat">
        
         <Stack direction={{ xs: "column", md: "column" }} spacing={2} alignItems="center">
           
           {/* Bottoni per selezionare il mezzo */}
-         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", mb: 4,  }}>
+         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", mb: 4 }}>
   <BottomNavigation
     sx={{
-      width: 400,
+      width: 350,
       borderRadius: 3,
       boxShadow: 2,
       bgcolor: "rgb(62 170 73)",
@@ -97,7 +97,7 @@ export default function Form() {
   </BottomNavigation>
 </Box>
 </Stack>
-<div className="flex justify-center gap-4 mb-6 min-w-fit">
+<div className="flex flex-wrap justify-center gap-4 mb-6 min-w-fit">
           {/* From */}
           <Autocomplete
             disablePortal

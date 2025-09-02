@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Button from "@mui/material/Button";
 
 export default function Result(props) {
   const { result, value } = props;
@@ -28,6 +29,13 @@ export default function Result(props) {
       <p className="text-gray-600">Distanza: {result.distance_km} km</p>
     )}
   </div>
+  <Button
+                variant="outlined"
+                sx={{ mt: 4, color: "rgb(178 132 91)", borderColor: "green" }}
+                onClick={() => window.location.reload()} // reset veloce
+              >
+                Nuovo calcolo
+              </Button>
 </motion.div>
   );
 }

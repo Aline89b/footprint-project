@@ -1,0 +1,222 @@
+[
+  {
+    "code": "ROMA",
+    "lat": "41.9028",
+    "lon": "12.4964",
+    "name": "Roma",
+    "city": "Roma",
+    "state": "Lazio",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "MILANO",
+    "lat": "45.4642",
+    "lon": "9.1900",
+    "name": "Milano",
+    "city": "Milano",
+    "state": "Lombardia",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "NAPOLI",
+    "lat": "40.8518",
+    "lon": "14.2681",
+    "name": "Napoli",
+    "city": "Napoli",
+    "state": "Campania",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "FIRENZE",
+    "lat": "43.7696",
+    "lon": "11.2558",
+    "name": "Firenze",
+    "city": "Firenze",
+    "state": "Toscana",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "BOLOGNA",
+    "lat": "44.4949",
+    "lon": "11.3426",
+    "name": "Bologna",
+    "city": "Bologna",
+    "state": "Emilia-Romagna",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "TORINO",
+    "lat": "45.0703",
+    "lon": "7.6869",
+    "name": "Torino",
+    "city": "Torino",
+    "state": "Piemonte",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "GENOVA",
+    "lat": "44.4056",
+    "lon": "8.9463",
+    "name": "Genova",
+    "city": "Genova",
+    "state": "Liguria",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "VENEZIA",
+    "lat": "45.4408",
+    "lon": "12.3155",
+    "name": "Venezia",
+    "city": "Venezia",
+    "state": "Veneto",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "VERONA",
+    "lat": "45.4384",
+    "lon": "10.9916",
+    "name": "Verona",
+    "city": "Verona",
+    "state": "Veneto",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "PADOVA",
+    "lat": "45.4064",
+    "lon": "11.8768",
+    "name": "Padova",
+    "city": "Padova",
+    "state": "Veneto",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "BARI",
+    "lat": "41.1253",
+    "lon": "16.8667",
+    "name": "Bari",
+    "city": "Bari",
+    "state": "Puglia",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "PALERMO",
+    "lat": "38.1157",
+    "lon": "13.3615",
+    "name": "Palermo",
+    "city": "Palermo",
+    "state": "Sicilia",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "CATANIA",
+    "lat": "37.5079",
+    "lon": "15.0830",
+    "name": "Catania",
+    "city": "Catania",
+    "state": "Sicilia",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "PISA",
+    "lat": "43.7167",
+    "lon": "10.4000",
+    "name": "Pisa",
+    "city": "Pisa",
+    "state": "Toscana",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "ANCONA",
+    "lat": "43.6158",
+    "lon": "13.5189",
+    "name": "Ancona",
+    "city": "Ancona",
+    "state": "Marche",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "TRIESTE",
+    "lat": "45.6495",
+    "lon": "13.7768",
+    "name": "Trieste",
+    "city": "Trieste",
+    "state": "Friuli-Venezia Giulia",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "BRESCIA",
+    "lat": "45.5416",
+    "lon": "10.2190",
+    "name": "Brescia",
+    "city": "Brescia",
+    "state": "Lombardia",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "PARMA",
+    "lat": "44.8015",
+    "lon": "10.3279",
+    "name": "Parma",
+    "city": "Parma",
+    "state": "Emilia-Romagna",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "SALERNO",
+    "lat": "40.6807",
+    "lon": "14.7594",
+    "name": "Salerno",
+    "city": "Salerno",
+    "state": "Campania",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  },
+  {
+    "code": "LUCCA",
+    "lat": "43.8430",
+    "lon": "10.5055",
+    "name": "Lucca",
+    "city": "Lucca",
+    "state": "Toscana",
+    "country": "Italia",
+    "tz": "Europe/Rome",
+    "type": "City"
+  }
+]

@@ -15,6 +15,8 @@ import {
   Select,
 } from "@mui/material";
 import data from "/public/json/data.json";
+import car from "/public/json/car.json";
+import train from "/public/json/train.json";
 import { v4 as uuid } from "uuid";
 import useFootprintData from "../hooks/useFootprintData";
 import Navbar from "../components/navbar";
@@ -42,7 +44,17 @@ export default function Form() {
     fetchData,
   } = useFootprintData();
 
-  data.forEach((el) => {
+let dataB;
+
+if (transport === "car") {
+  dataB = car;
+} else if (transport === "rail") {
+  dataB = train;
+} else {
+  dataB = data; // default = auto
+}
+
+  dataB.forEach((el) => {
     el.id = uuid();
   });
 
@@ -91,10 +103,10 @@ export default function Form() {
               <Autocomplete
                 disablePortal
                 id="origin"
-                options={data}
+                options={dataB}
                 onChange={handleOriginChange}
                 sx={{ minWidth: 250 }}
-                getOptionLabel={(option) => `${option.city}${option.name}${option.country}`}
+                getOptionLabel={(option) => `${option.city} ${option.name} ${option.country}`}
                 renderOption={(props, option) => (
                   <Box component="li" {...props} key={option.id}>
                     {option.city} ({option.name}) {option.country}
@@ -109,7 +121,7 @@ export default function Form() {
               <Autocomplete
                 disablePortal
                 id="destination"
-                options={data}
+                options={dataB}
                 sx={{ minWidth: 250 }}
                 getOptionLabel={(option) => `${option.city}`}
                 onChange={handleDestinationChange}
@@ -161,8 +173,10 @@ export default function Form() {
                   </FormControl>
 
                   <FormControl>
-                    <InputLabel>Car Type</InputLabel>
+                    <InputLabel id="car-type-label">Car Type</InputLabel>
                     <Select
+                      labelId="car-type-label"
+                      id="car-type-select"
                       value={carType || ""}
                       onChange={(e) => setCarType(e.target.value)}
                       label="Car Type"
